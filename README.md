@@ -1,5 +1,5 @@
-# pharmacy-management-system
- A pharmacy with the stakeholders involved are the owner, manager and cashier requires a system to streamline its business processes, involving authentication, medication inventory management, and customer record management. The system needs to enforce user roles and permissions for different actions.
+# PHP-assessment
+ A pharmacy with the stakeholders involved are the owner, manager and cashier requires a system to streamline its business processes, involving authentication, medication inventory management, and customer record management. The system needs to enforce user roles and permissions for different actions. This is a system to reduce their workload and a more efficient system than manual processes.
  
  **ER diagram**
   
