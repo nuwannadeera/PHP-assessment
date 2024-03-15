@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthUserController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,20 @@ use Illuminate\Support\Facades\Route;
 Route::post('/registration', [AuthUserController::class, 'registrationPost'])->name('registrationPost');
 
 Route::post('/login', [AuthUserController::class, 'loginPost'])->name('loginPost');
+
+
+//--------------------------------------customer routes
+
+Route::post('/addCustomer', [CustomerController::class, 'addCustomer'])
+    ->name('addCustomer');
+
+Route::get('/viewCustomer', [CustomerController::class, 'viewCustomer'])
+    ->name('viewCustomer');
+
+Route::patch('updateCustomerDetail/{id}',[CustomerController::class, 'updateCustomerDetail'])
+    ->name('updateCustomerDetail');
+
+Route::delete('deleteCustomer/{id}',[CustomerController::class, 'deleteCustomer'])
+    ->name('deleteCustomer');
+
+
