@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\softDeletes;
 
 class Medication extends Model {
     protected $table = 'medications';
@@ -15,5 +14,5 @@ class Medication extends Model {
         return $this->belongsTo('App\User', 'user_id');
     }
 
-    use HasFactory, softDeletes;
+    use HasFactory;
 }
