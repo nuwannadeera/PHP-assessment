@@ -48,8 +48,7 @@ class CustomerController extends Controller {
     }
 
     function viewCustomer() {
-        $result = Customer::select('name', 'address', 'email', 'contact_no', 'description')
-            ->get();
+        $result = Customer::select('name', 'address', 'email', 'contact_no', 'description')->get();
         return $result;
     }
 
